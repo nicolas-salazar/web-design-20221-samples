@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    gap: 8px;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    align-items: center;
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    font-size: 48px;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.card:hover{
+    opacity: 1;
+}
+
+.double-height-card {
+    grid-row: span 2 / auto;
+}
+
+.triple-height-card {
+    grid-row: span 3 / auto;
+}
+
+.double-size-square {
+    grid-column: span 2 / auto;
+    grid-row: span 2 / auto;
+}
+
+.image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}

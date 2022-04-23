@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.container {
+    background-color: #727272;
+    display: grid;
+    grid-template-columns: repeat(4, 125px);
+    grid-auto-rows: 250px;
+    gap: 8px;
+}
+
+.card {
+    align-items: center;
+    background-color: beige;
+    display: flex;
+    font-size: 48px;
+    justify-content: center;
+}
