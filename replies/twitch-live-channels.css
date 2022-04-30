@@ -1,0 +1,113 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a550ff;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+}
+
+.p-2 {
+    padding: 2px;
+}
+
+.p-4 {
+    padding: 4px;
+}
+
+.p-8 {
+    padding: 8px;
+}
+
+.p-16 {
+    padding: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 330px;
+}
+
+.purple-background{
+    background-color: rgb(89, 0, 191);
+}
+
+.video-preview-container {
+    background-image: url(https://static-cdn.jtvnw.net/previews-ttv/live_user_gladoop-440x248.jpg);
+    background-size: contain;
+    height: 186px;
+    width: 100%;
+}
+
+.video-preview-container:hover{
+    transform: translate(5px, -5px);
+}
+
+.metadata-preview-container {
+    align-items: flex-start;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.live-button {
+    background-color: #de001a;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.inner-metadata-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 12px;
+    gap: 6px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.video-title {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.video-description-labels {
+    font-size: 10px;
+}
+
+.pills-container {
+    gap: 4px;
+}
+
+.badge-pill {
+    background-color: #343434;
+    border-radius: 8px;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    width: fit-content;
+}
