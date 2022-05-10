@@ -39,7 +39,7 @@ a:hover {
     width: 330px;
 }
 
-.purple-background{
+.purple-background {
     background-color: rgb(89, 0, 191);
 }
 
@@ -50,7 +50,7 @@ a:hover {
     width: 100%;
 }
 
-.video-preview-container:hover{
+.video-preview-container:hover {
     transform: translate(5px, -5px);
 }
 
@@ -85,6 +85,10 @@ a:hover {
     font-size: 12px;
     gap: 6px;
     margin: 0;
+    min-width: 0;
+}
+
+.truncated-text-container {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
