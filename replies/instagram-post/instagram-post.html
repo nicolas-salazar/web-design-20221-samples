@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="./instagram-post.css">
+
+    <!-- Icons library assets import -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div class="post-owner-container">
+                <a href="https://www.instagram.com/culturacolectiva/">
+                    <img class="owner-profile-picture" src="./culturacolectivalogo.jpeg">
+                </a>
+
+                <a class="no-underline" href="https://www.instagram.com/culturacolectiva/">
+                    <span class="owner-username">culturacolectiva</span>
+                </a>
+            </div>
+
+            <i class="pointer" data-feather="more-horizontal"></i>
+        </div>
+
+        <div class="post-content-container">
+            <img class="post-image" src="./post.jpeg">
+        </div>
+
+        <div class="actions-container">
+            <div class="row">
+                <div class="actions-icon-container">
+                    <i class="pointer" data-feather="heart"></i>
+                </div>
+
+                <div class="actions-icon-container">
+                    <i class="pointer" data-feather="message-circle"></i>
+                </div>
+
+                <div class="actions-icon-container">
+                    <i class="pointer" data-feather="send"></i>
+                </div>
+            </div>
+
+            <div class="actions-icon-container">
+                <i class="pointer" data-feather="bookmark"></i>
+            </div>
+
+            <div class="floating-dots-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="likes-container">
+            <img class="liked-by-profile-picture" src="./likedbypicture.jpeg">
+            <span>Les guesta a
+                <a href="https://www.instagram.com/lunatintaypluma/">lunatintaypluma</a> y
+                <a class="no-underline" href="https://www.instagram.com/p/CdWehQVPTyk/liked_by/">17,710 personas más</a>
+            </span>
+        </div>
+
+        <div class="comment-container">
+            <a href="https://www.instagram.com/grettaconganas/">culturacolectiva</a>
+            Confirma si también iniciaste tu semana así. 🥺 Ve el álbum completo en
+            <a class="user-tag-href no-underline" href="">@grettaconganas</a>
+        </div>
+
+        <div class="see-all-comments-container">
+            <a class="no-underline" href="https://www.instagram.com/p/CdWehQVPTyk/">
+                Ver los 84 comentarios
+            </a>
+        </div>
+
+        <div class="days-ago-container">
+            Hace un día
+        </div>
+
+        <div class="comment-box-container">
+            <i class="pointer" data-feather="smile"></i>
+            <input class="new-comment-input" placeholder="Agrega un comentario...">
+            <button class="submit-comment-button">Publicar</button>
+        </div>
+    </div>
+
+    <!-- Icons library script -->
+    <script>feather.replace()</script>
+</body>
+
+</html>
