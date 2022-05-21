@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+.header {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    min-height: 100px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.header::-webkit-scrollbar {
+    background-color: magenta;
+    height: 8px;
+    width: 5px;
+}
+
+.header::-webkit-scrollbar-thumb {
+    background-color: blue;
+    height: 8px;
+    width: 5px;
+}
+
+.body-container {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-height: 0;
+}
+
+.sidebar {
+    background-color: green;
+    overflow: scroll;
+    width: 250px;
+}
+
+.content {
+    background-color: orange;
+    flex: 1;
+    overflow: scroll;
+}
+
+.card {
+    background-color: black;
+    height: 250px;
+    margin: 16px;
+    width: 75%;
+}
+
+.horizontal-card {
+    background-color: white;
+    height: 50%;
+    margin: 16px;
+    width: 600px;
+    min-width: 500px;
+}
