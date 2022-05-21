@@ -1,0 +1,88 @@
+:root {
+    --play-button-spacing: 24px;
+}
+
+body {
+    background-color: #131313;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: #181818;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 320px;
+    padding: 16px;
+    position: relative;
+    width: 240px;
+}
+
+.container:hover>button{
+    display: block;
+}
+
+.album-cover-container {
+    position: relative;
+}
+
+.album-cover-container:hover>button {
+    display: block;
+}
+
+.album-cover {
+    border-radius: 8px;
+    object-fit: contain;
+    width: 100%;
+
+    -webkit-box-shadow: 3px 9px 15px -1px rgba(90, 90, 90, 0.38);
+    box-shadow: 3px 9px 15px -1px rgba(90, 90, 90, 0.38);
+}
+
+.song-metadata-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.song-title {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.artist-name {
+    color: #a7a7a7;
+    font-size: 10px;
+}
+
+.artist-name:hover {
+    text-decoration: underline;
+}
+
+.play-button {
+    background-color: #1ed760;
+    border-radius: 50%;
+    border: none;
+    bottom: calc(4.5*var(--play-button-spacing));
+    display: none;
+    height: 48px;
+    position: absolute;
+    right: var(--play-button-spacing);
+    width: 48px;
+
+    -webkit-box-shadow: 3px 9px 15px -1px rgba(0, 0, 0, 0.69);
+    box-shadow: 3px 9px 15px -1px rgba(0, 0, 0, 0.69);
+}
+
+.play-song-icon {
+    fill: black;
+    margin-left: 4px;
+    margin-top: 2px;
+}
