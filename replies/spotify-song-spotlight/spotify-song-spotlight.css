@@ -24,6 +24,10 @@ a {
     width: 240px;
 }
 
+.container:hover{
+    background-color: #282828;
+}
+
 .container:hover>button{
     display: block;
 }
@@ -70,8 +74,8 @@ a {
     background-color: #1ed760;
     border-radius: 50%;
     border: none;
-    bottom: calc(4.5*var(--play-button-spacing));
-    display: none;
+    bottom: 120px;
+    /* display: none; */
     height: 48px;
     position: absolute;
     right: var(--play-button-spacing);
@@ -79,7 +83,21 @@ a {
 
     -webkit-box-shadow: 3px 9px 15px -1px rgba(0, 0, 0, 0.69);
     box-shadow: 3px 9px 15px -1px rgba(0, 0, 0, 0.69);
+
+    animation-name: playButtonFadeInUp;
+    animation-duration: 1s;
 }
+
+@keyframes playButtonFadeInUp {
+    from {
+        bottom: 100px;
+        opacity: 0;
+    }
+    to {
+        bottom: 120px;
+        opacity: 1;
+    }
+  }
 
 .play-song-icon {
     fill: black;
