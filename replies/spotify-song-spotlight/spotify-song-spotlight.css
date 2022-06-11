@@ -28,9 +28,6 @@ a {
     background-color: #282828;
 }
 
-.container:hover>button{
-    display: block;
-}
 
 .album-cover-container {
     position: relative;
@@ -75,17 +72,25 @@ a {
     border-radius: 50%;
     border: none;
     bottom: 120px;
-    /* display: none; */
     height: 48px;
     position: absolute;
     right: var(--play-button-spacing);
     width: 48px;
+    opacity: 0;
 
     -webkit-box-shadow: 3px 9px 15px -1px rgba(0, 0, 0, 0.69);
     box-shadow: 3px 9px 15px -1px rgba(0, 0, 0, 0.69);
+}
 
+.faded-element{
+    animation-name: playButtonFadeOutDown;
+    animation-duration: 1s;
+}
+
+.container:hover>.faded-element{
     animation-name: playButtonFadeInUp;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes playButtonFadeInUp {
@@ -96,6 +101,17 @@ a {
     to {
         bottom: 120px;
         opacity: 1;
+    }
+}
+
+@keyframes playButtonFadeOutDown {
+    from {
+        bottom: 120px;
+        opacity: 1;
+    }
+    to {
+        bottom: 100px;
+        opacity: 0;
     }
   }
 

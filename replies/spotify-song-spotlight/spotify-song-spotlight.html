@@ -38,6 +38,18 @@
 
     <!-- Icons library script -->
     <script>feather.replace()</script>
+
+    <script>
+        const playButtons = document.getElementsByClassName('play-button');
+
+        for (let i = 0; i < playButtons.length; i++) {
+            const theButton = playButtons[i];
+
+            theButton.addEventListener('mouseover', () => {
+                theButton.classList.add('faded-element');
+            });
+        }
+    </script>
 </body>
 
 </html>
